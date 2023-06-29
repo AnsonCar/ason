@@ -5,6 +5,7 @@
 
 <p align="center">終端小工具</p>
 <p align="center">主要是個人使用，所有不跟規範</p>
+<p align="center">目前只支持Mac，上學無時間</p>
 
 ## 理念
 因為 太多指令需要記同太長，所以我自己寫幾個指令簡化指令（套娃）。
@@ -39,7 +40,7 @@
 
 ## 安裝
 ```shell
-# git clone https://github.com/AnsonCar/ason.git ~/ason
+git clone https://github.com/AnsonCar/ason.git ~/ason
 chmod +x ~/ason
 chmod +x ~/ason/bin/ason
 echo 'export PATH="$PATH:$HOME/ason/bin"' >> ~/.bash_profile
