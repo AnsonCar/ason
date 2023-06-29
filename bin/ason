@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -e
+
+ASON_ROOT="$HOME/ason/"
+
+if [ ! -z $1 ]; then
+    # python command
+    if [ $1 = "py" ]; then
+        bash $ASON_ROOT/ason_py.sh $2 $3 $4
+    elif [ $1 = "chomedriver" ]; then
+        python3 $ASON_ROOT/download_chomedriver.py
+    elif [ $1 = "secretKey" ]; then
+        python3 $ASON_ROOT/secret_key.py
+    elif [ $1 = "version" ]; then
+        bash $ASON_ROOT/ason_version.sh
+    # show all command
+    elif [ $1 = "help" ]; then
+        bash $ASON_ROOT/ason_help.sh
+    # no command
+    else
+        echo "ason: no such command: '$1'"
+    fi
+# show all command    
+else
+    bash $ASON_ROOT/ason_help.sh
+fi
