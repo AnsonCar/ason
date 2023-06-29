@@ -22,11 +22,24 @@
 ## 項目結構
 ```
 *
+├── README.md
+├── ason_help.sh
+├── ason_init.sh
+├── ason_py.sh
+├── ason_version.sh
+├── bin
+│   └── ason
+├── doc
+│   ├── Logo
+│   │   └── NERV.svg
+│   └── changelog.md
+├── download_chomedriver.py
+└── secret_key.py
 ```
 
 ## 安裝
 ```shell
-# git clone   ~/ason
+# git clone https://github.com/AnsonCar/ason.git ~/ason
 chmod +x ~/ason
 chmod +x ~/ason/bin/ason
 echo 'export PATH="$PATH:$HOME/ason/bin"' >> ~/.bash_profile
