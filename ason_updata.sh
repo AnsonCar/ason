@@ -16,6 +16,7 @@ if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
   if [ "$answer" = "y" ]; then
     # Download the latest version of ason
     cd $HOME/ason
+    echo "updata" > up.txt
     git stash
     git stash drop
     git fetch
