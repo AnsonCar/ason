@@ -3,7 +3,7 @@
 set -e
 
 ASON_ROOT="$HOME/ason/"
-ASON_VERSION=1.0.1
+ASON_VERSION=1.0.2
 
 if [ ! -z $1 ]; then
     # python command
@@ -14,6 +14,8 @@ if [ ! -z $1 ]; then
         rm LICENSE.chromedriver
     elif [ $1 = "secretKey" ]; then
         python3 $ASON_ROOT/secret_key.py
+    elif [ $1 = "updata" ]; then
+        bash ason_updata.sh
     elif [ $1 = "version" ]; then
         echo $ASON_VERSION
     # show all command
