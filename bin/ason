@@ -3,7 +3,7 @@
 set -e
 
 ASON_ROOT="$HOME/ason/"
-ASON_VERSION=1.1.3
+ASON_VERSION=1.1.4
 
 if [ ! -z $1 ]; then
     # python command
