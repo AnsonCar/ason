@@ -17,7 +17,7 @@ if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
     # Download the latest version of ason
     cd $HOME/ason
     # echo "updata" > up.txt
-    # git stash
+    git stash
     # git stash drop
     git fetch
     git merge origin/main
