@@ -7,7 +7,7 @@ echo "Some useful ason commands are:"
 
 echo "#Basic"
 echo " version              顯示版本號"
-echo " updata"              更新工具包
+echo " updata               更新工具包"
 echo " chomedriver          下載chomedriver"
 
 echo ""

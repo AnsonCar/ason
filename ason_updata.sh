@@ -19,7 +19,9 @@ if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
   read answer
   if [ "$answer" = "y" ]; then
     # Download the latest version of ason
-    curl -sL "https://github.com/AnsonCar/ason/raw/main/ason.sh" -o "$HOME/bin/ason" && chmod +x "$HOME/bin/ason"
+    cd $HOME/ason
+    git fetch
+    git merge origin/main
     echo "ason has been updated to version $LATEST_VERSION."
   else
     echo "Skipping ason update."
