@@ -20,6 +20,8 @@ if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
   if [ "$answer" = "y" ]; then
     # Download the latest version of ason
     cd $HOME/ason
+    git stash
+    git stash dorp
     git fetch
     git merge origin/main
     echo "ason has been updated to version $LATEST_VERSION."
