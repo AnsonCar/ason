@@ -45,6 +45,7 @@ chmod +x ~/ason
 chmod +x ~/ason/bin/ason
 echo 'export PATH="$PATH:$HOME/ason/bin"' >> ~/.bash_profile
 echo "source ~/.bash_profile" >> ~/.zshrc
+echo "source ~/.bash_profile" >> ~/.bashrc
 ```
 
 ### 使用方法
