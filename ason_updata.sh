@@ -2,10 +2,6 @@
 
 set -e
 
-#!/usr/bin/env bash
-
-set -e
-
 # Get the latest version number from the GitHub API
 LATEST_VERSION=$(curl --silent "https://api.github.com/repos/AnsonCar/ason/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
