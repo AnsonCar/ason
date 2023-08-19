@@ -3,7 +3,7 @@
 set -e
 
 ASON_ROOT="$HOME/ason/"
-ASON_VERSION=1.1.4
+ASON_VERSION=1.1.5
 
 if [ ! -z $1 ]; then
     # python command
@@ -12,6 +12,8 @@ if [ ! -z $1 ]; then
     elif [ $1 = "chomedriver" ]; then
         python3 $ASON_ROOT/download_chomedriver.py
         rm LICENSE.chromedriver
+    elif [ $1 = "tree" ]; then
+        python3 $ASON_ROOT/dirTree.py $(pwd) $2
     elif [ $1 = "secretKey" ]; then
         python3 $ASON_ROOT/secret_key.py
     elif [ $1 = "updata" ]; then
@@ -21,6 +23,8 @@ if [ ! -z $1 ]; then
     # show all command
     elif [ $1 = "help" ]; then
         bash $ASON_ROOT/ason_help.sh
+    elif [ $1 = "view" ]; then
+        bash $ASON_ROOT/ason_view.sh
     # no command
     else
         echo "ason: no such command: '$1'"

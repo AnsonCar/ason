@@ -3,6 +3,8 @@
 set -e
 
 echo ""
+echo "Usage: ason COMMAND [OPTIONS]"
+echo ""
 echo "Some useful ason commands are:"
 
 echo "#Basic"
@@ -26,4 +28,7 @@ echo ""
 echo "----------"
 echo "#other"
 echo " secretKey            生成密鑰"
+echo " tree                 顯示文件樹狀結構"
+echo " view                 顯示ason名稱"
+echo " help                 顯示幫助"
 echo ""

@@ -27,6 +27,7 @@
 ├── ason_help.sh
 ├── ason_init.sh
 ├── ason_py.sh
+├── ason_updata.sh
 ├── ason_version.sh
 ├── bin
 │   └── ason
