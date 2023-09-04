@@ -22,7 +22,7 @@ def dirTree(path, exclude_list=None, max_depth=None, current_depth=0):
             
 # 取得args參數
 argv = sys.argv
-exclude_list = [".DS_Store", ".git"]
+exclude_list = [".DS_Store", ".git","node_modules"]
 if len(argv) > 2:
     dirTree(argv[1],exclude_list=exclude_list, max_depth=int(argv[2])-1 )
 else:

@@ -10,7 +10,6 @@ CURRENT_VERSION=$(ason version)
 
 # Compare the latest and current versions
 if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
-  echo "A new version of ason is available. Version $LATEST_VERSION is now available to download."
   echo "Do you want to update ason now? (y/n)"
   read answer
   if [ "$answer" = "y" ]; then
@@ -21,7 +20,6 @@ if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
     # git stash drop
     git fetch
     git merge origin/main
-    echo "ason has been updated to version $LATEST_VERSION."
   else
     echo "Skipping ason update."
   fi

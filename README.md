@@ -50,8 +50,28 @@ echo "source ~/.bash_profile" >> ~/.bashrc
 ```
 
 ### 使用方法
-```shell
-ason help
+```
+#Basic
+ version              顯示版本號
+ updata               更新工具包
+ chomedriver          下載chomedriver
+
+----------
+#python
+ py init              安裝python虛擬環境
+ py init r            安裝python虛擬環境及依賴包
+ py outlib            輸出python依賴包
+
+##django
+ startproject <name>  Django 建立專案
+ startapp <name>      Django 建立app
+
+----------
+#other
+ secretKey            生成密鑰
+ tree                 顯示文件樹狀結構
+ view                 顯示ason名稱
+ help                 顯示幫助
 ```
 
 ## 查閱更多
