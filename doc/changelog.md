@@ -1,4 +1,6 @@
 # Change Log(更新日志)
+## ason 2023-09-11 (v1.1.6)
+- [AnsonCar]    更新dietree 樣式
 ## ason 2023-09-04 (v1.1.5)
 - [AnsonCar]    修改README.md的使用方法，更加詳細
 
