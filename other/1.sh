@@ -1,0 +1,1 @@
+rsync -av --exclude '._*' --exclude '.DS_Store' --exclude 'node_modules' /path/to/source /path/to/destination

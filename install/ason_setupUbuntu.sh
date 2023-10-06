@@ -1,7 +1,6 @@
 sudo apt-get update
 apt-get install git
-apt install docker.io
-apt install docker-compose
+apt install docker.io docker-compose -y
 
 # git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 # cd ~/.pyenv && src/configure && make -C src
