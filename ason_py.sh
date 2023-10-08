@@ -12,6 +12,8 @@ if [ $1 = "init" ]; then
         fi
     fi
     echo "source ./.venv/bin/activate" >> use.md
+elif [ $1 = "flask" ]; then
+    bash $HOME/ason/install/ason_flask.sh
 # django
 elif [ $1 = "django" ]; then
     if [ ! -z $2 ]; then

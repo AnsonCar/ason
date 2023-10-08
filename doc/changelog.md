@@ -1,4 +1,9 @@
 # Change Log(更新日志)
+## ason 2023-10-08(v.1.1.6)
+- [AnsonCar]    新增 setup 文件夾
+- [AnsonCar]    新增 flask 初始化 方法
+- [AnsonCar]    新增 專案初始化 方法
+
 ## ason 2023-10-07(v.1.1.6)
 - [AnsonCar]    新增 個人使用cpoy文件方法 (macOS有啲._文件我唔想copy去usb)
 
